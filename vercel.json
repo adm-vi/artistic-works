@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/(.*)",
@@ -15,18 +17,11 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/index.html"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ],
-  "rewrites": [
-    { 
-      "source": "/(.*)", 
-      "destination": "/index.html" 
     }
   ],
   "headers": [
@@ -35,7 +30,7 @@
       "headers": [
         { 
           "key": "Cache-Control", 
-          "value": "s-maxage=1, stale-while-revalidate" 
+          "value": "s-maxage=1, stale-while-revalidate=60" 
         }
       ]
     }
