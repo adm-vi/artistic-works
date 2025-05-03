@@ -1,0 +1,26 @@
+{
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "artisticworks.xyz"
+          }
+        ],
+        "destination": "https://www.artisticworks.xyz/$1",
+        "permanent": true
+      }
+    ],
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
+    ],
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          { "key": "Cache-Control", "value": "s-maxage=1, stale-while-revalidate" }
+        ]
+      }
+    ]
+  }
