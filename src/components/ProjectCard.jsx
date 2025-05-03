@@ -7,29 +7,41 @@ import {
   CardTitle,
   CardDescription
 } from '@/components/ui/card'
-import artisticA from '../assets/artistic_a.png'
+import { cn } from "@/lib/utils"
+
+const getBadgeStyles = (color) => {
+  const styles = {
+    blue: "bg-blue-200/90 border-blue-300/50 text-blue-800",
+    green: "bg-green-200/90 border-green-300/50 text-green-800",
+    red: "bg-red-200/90 border-red-300/50 text-red-800",
+    purple: "bg-purple-200/90 border-purple-300/50 text-purple-800",
+    yellow: "bg-yellow-200/90 border-yellow-300/50 text-yellow-800"
+  };
+  
+  return styles[color] || "bg-gray-200/90 border-gray-300/50 text-gray-800";
+};
 
 const ProjectCard = ({ title, description, content, externalLink, badges = [] }) => {
   return (
-    <Card className="h-[calc(33vh-2rem)] flex flex-col overflow-hidden shadow-sm relative">
-      <div className="absolute top-12 right-3">
+    <div className="h-[calc(33vh-2rem)] rounded-lg border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/30 backdrop-blur-md overflow-hidden relative flex flex-col">
+      <div className="absolute top-12 right-3 drop-shadow-md">
         <img 
-          src={artisticA} 
+          src="/artistic_a.png" 
           alt="Logo" 
           className="h-24 w-auto object-contain"
         />
       </div>
       
-      <CardHeader className="flex-shrink-0 pb-0 pr-24">
-        <CardTitle className="text-xl">{title}</CardTitle>
-        <CardDescription className="text-slate-500">{description}</CardDescription>
-      </CardHeader>
+      <div className="flex-shrink-0 pb-0 pr-24 flex flex-col space-y-1.5 p-6">
+        <h3 className="text-2xl font-normal leading-tight tracking-wide drop-shadow-sm font-jersey text-slate-900 mb-1">{title}</h3>
+        <p className="text-sm text-slate-600">{description}</p>
+      </div>
       
-      <CardContent className="flex-1 p-6 pt-0 pr-24 mt-2">
-        <p className="text-slate-700">{content}</p>
-      </CardContent>
+      <div className="flex-1 p-6 pt-0 pr-24 mt-2">
+        <p className="text-slate-800">{content}</p>
+      </div>
       
-      <CardFooter className="border-t flex justify-between items-center py-2 mt-auto">
+      <div className="border-t border-white/20 flex justify-between items-center p-6 pt-0 py-2 mt-auto">
         <a 
           href={externalLink}
           target="_blank"
@@ -56,14 +68,14 @@ const ProjectCard = ({ title, description, content, externalLink, badges = [] })
           {badges.map((badge, index) => (
             <span 
               key={index} 
-              className={`inline-flex items-center rounded-full bg-${badge.color}-50 px-2 py-0.5 text-xs font-medium text-${badge.color}-700`}
+              className={`inline-flex items-center rounded-full backdrop-blur-sm shadow-sm px-2 py-0.5 text-xs font-medium border ${getBadgeStyles(badge.color)}`}
             >
               {badge.text}
             </span>
           ))}
         </div>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   )
 }
 

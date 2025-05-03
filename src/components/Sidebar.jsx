@@ -6,7 +6,7 @@ const Sidebar = () => {
   const logoRef = useRef(null)
 
   return (
-    <div className="w-1/3 bg-gradient-to-b from-slate-50 to-slate-100 rounded-md border border-slate-200 p-6">
+    <div className="w-1/3 rounded-md border border-slate-200 p-6">
       <div className="flex flex-col h-full">
         <div 
           className="inline-block perspective-[800px]"
