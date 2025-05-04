@@ -23,35 +23,35 @@ const getBadgeStyles = (color) => {
 
 const ProjectCard = ({ title, description, content, externalLink, badges = [] }) => {
   return (
-    <div className="h-[calc(33vh-2rem)] rounded-lg border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/30 backdrop-blur-md overflow-hidden relative flex flex-col">
-      <div className="absolute top-12 right-3 drop-shadow-md">
+    <div className="h-auto md:h-[calc(33vh-2rem)] rounded-lg border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/30 backdrop-blur-md overflow-hidden relative flex flex-col">
+      <div className="absolute top-2 md:top-12 right-1 md:right-3 drop-shadow-md">
         <img 
           src="/artistic_a.png" 
           alt="Logo" 
-          className="h-24 w-auto object-contain"
+          className="h-10 md:h-24 w-auto object-contain opacity-80 md:opacity-100"
         />
       </div>
       
-      <div className="flex-shrink-0 pb-0 pr-24 flex flex-col space-y-1.5 p-6">
-        <h3 className="text-2xl font-normal leading-tight tracking-wide drop-shadow-sm font-jersey text-slate-900 mb-1">{title}</h3>
-        <p className="text-sm text-slate-600">{description}</p>
+      <div className="flex-shrink-0 pb-0 pr-12 md:pr-24 flex flex-col space-y-0 md:space-y-1.5 p-3 md:p-6">
+        <h3 className="text-lg md:text-2xl font-normal leading-tight tracking-wide drop-shadow-sm font-jersey text-slate-900 mb-0 md:mb-1">{title}</h3>
+        <p className="text-xs md:text-sm text-slate-600">{description}</p>
       </div>
       
-      <div className="flex-1 p-6 pt-0 pr-24 mt-2">
-        <p className="text-slate-800">{content}</p>
+      <div className="flex-1 p-3 md:p-6 pt-0 pr-12 md:pr-24 mt-0 md:mt-2">
+        <p className="text-xs md:text-base text-slate-800 line-clamp-2 md:line-clamp-none">{content}</p>
       </div>
       
-      <div className="border-t border-white/20 flex justify-between items-center p-6 pt-0 py-2 mt-auto">
+      <div className="border-t border-white/20 flex items-center justify-between gap-1 md:gap-0 p-2 md:p-6 pt-1 md:pt-0 py-1 md:py-2 mt-auto">
         <a 
           href={externalLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
+          className="inline-flex items-center text-xs md:text-sm font-medium text-blue-600 hover:text-blue-800"
         >
-          View Project
+          View
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            className="h-4 w-4 ml-1" 
+            className="h-3 w-3 md:h-4 md:w-4 ml-0.5 md:ml-1" 
             fill="none" 
             viewBox="0 0 24 24" 
             stroke="currentColor"
@@ -64,11 +64,11 @@ const ProjectCard = ({ title, description, content, externalLink, badges = [] })
             />
           </svg>
         </a>
-        <div className="flex space-x-1">
+        <div className="flex flex-wrap gap-0.5 md:gap-1">
           {badges.map((badge, index) => (
             <span 
               key={index} 
-              className={`inline-flex items-center rounded-full backdrop-blur-sm shadow-sm px-2 py-0.5 text-xs font-medium border ${getBadgeStyles(badge.color)}`}
+              className={`inline-flex items-center rounded-full backdrop-blur-sm shadow-sm px-1 md:px-2 py-0.5 text-[8px] md:text-xs font-medium border ${getBadgeStyles(badge.color)}`}
             >
               {badge.text}
             </span>
