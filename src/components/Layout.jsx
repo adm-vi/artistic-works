@@ -3,7 +3,7 @@ import Sidebar from './Sidebar'
 
 const Layout = ({ children }) => {
   return (
-    <div className="container mx-auto p-4 flex flex-col min-h-screen gap-4">
+    <div className="container mx-auto p-4 md:py-16 flex flex-col min-h-screen gap-4 md:justify-center">
       {/* Flex container - column on mobile, row on md+ screens */}
       <div className="flex flex-col md:flex-row flex-1 gap-4">
         {/* Sidebar - full width on mobile, 1/3 on md+ screens */}

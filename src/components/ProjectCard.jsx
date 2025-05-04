@@ -21,27 +21,27 @@ const getBadgeStyles = (color) => {
   return styles[color] || "bg-gray-200/90 border-gray-300/50 text-gray-800";
 };
 
-const ProjectCard = ({ title, description, content, externalLink, badges = [] }) => {
+const ProjectCard = ({ title, description, content, externalLink, image, imageClass, badges = [] }) => {
   return (
-    <div className="h-auto md:h-[calc(33vh-2rem)] rounded-lg border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/30 backdrop-blur-md overflow-hidden relative flex flex-col">
-      <div className="absolute top-2 md:top-12 right-1 md:right-3 drop-shadow-md">
+    <div className="h-auto md:h-auto max-h-[280px] rounded-lg border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/30 backdrop-blur-md overflow-hidden relative flex flex-col">
+      <div className="absolute top-2 md:top-8 right-1 md:right-3 drop-shadow-md">
         <img 
-          src="/artistic_a.png" 
-          alt="Logo" 
-          className="h-10 md:h-24 w-auto object-contain opacity-80 md:opacity-100"
+          src={image || "/artistic_a.png"} 
+          alt={`${title} logo`} 
+          className={`h-10 md:h-20 w-auto object-contain opacity-80 md:opacity-100 ${imageClass || ''}`}
         />
       </div>
       
-      <div className="flex-shrink-0 pb-0 pr-12 md:pr-24 flex flex-col space-y-0 md:space-y-1.5 p-3 md:p-6">
-        <h3 className="text-lg md:text-2xl font-normal leading-tight tracking-wide drop-shadow-sm font-jersey text-slate-900 mb-0 md:mb-1">{title}</h3>
+      <div className="flex-shrink-0 pb-0 pr-12 md:pr-24 flex flex-col space-y-0 md:space-y-1 p-3 md:p-4">
+        <h3 className="text-lg md:text-xl font-normal leading-tight tracking-wide drop-shadow-sm font-jersey text-slate-900 mb-0">{title}</h3>
         <p className="text-xs md:text-sm text-slate-600">{description}</p>
       </div>
       
-      <div className="flex-1 p-3 md:p-6 pt-0 pr-12 md:pr-24 mt-0 md:mt-2">
-        <p className="text-xs md:text-base text-slate-800 line-clamp-2 md:line-clamp-none">{content}</p>
+      <div className="p-3 md:p-4 pt-0 pr-12 md:pr-24 mt-0 pb-1">
+        <p className="text-xs md:text-sm text-slate-800 line-clamp-3">{content}</p>
       </div>
       
-      <div className="border-t border-white/20 flex items-center justify-between gap-1 md:gap-0 p-2 md:p-6 pt-1 md:pt-0 py-1 md:py-2 mt-auto">
+      <div className="border-t border-white/20 flex items-center justify-between gap-1 md:gap-0 p-2 md:p-3 pt-1 py-1 mt-auto">
         <a 
           href={externalLink}
           target="_blank"
