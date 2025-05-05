@@ -17,7 +17,7 @@ export const projects = [
     title: "escarole.xyz", 
     description: "a healthier way to scroll", 
     content: "Learn about everything you are interested in & more; follow topics & ideas, not grifters & trolls.",
-    externalLink: "https://example.com/project2",
+    externalLink: "https://www.escarole.xyz/",
     image: "/images/Escarole.png",
     badges: [
       { text: "Art", color: "purple" },
@@ -27,7 +27,7 @@ export const projects = [
   { 
     id: "employeesOnly",
     title: "employeesOnly.tech", 
-    description: "A sample project", 
+    description: "a sample project", 
     content: "Project 3 description with more details. This is a placeholder for now, but will be filled with actual content when the project is ready to be showcased.",
     externalLink: "https://employeesonly.tech/",
     image: "/images/EmployeesOnly.png",
@@ -38,10 +38,10 @@ export const projects = [
   },
   { 
     id: "launch",
-    title: "Out to Launch", 
-    description: "User & market research to inspire solopreneurs", 
+    title: "out to launch", 
+    description: "user & market research to inspire solopreneurs", 
     content: "Project 4 description with additional information about the implementation, technologies used, and the problem it solves for users.",
-    externalLink: "https://example.com/project4",
+    externalLink: "https://outtolaunch.io/",
     image: "/images/project3.png",
     badges: [
       { text: "Development", color: "red" },
@@ -53,7 +53,7 @@ export const projects = [
     title: "Project 5", 
     description: "A sample project", 
     content: "on-demand vibe coding zoom support",
-    externalLink: "https://example.com/project5",
+    externalLink: "-",
     image: "/images/project3.png",
     badges: [
       { text: "Art", color: "purple" }
@@ -64,7 +64,7 @@ export const projects = [
     title: "Project 6", 
     description: "A sample project", 
     content: "Project 6 description showcasing the full capabilities of this product, including its unique features and the value it provides to users.",
-    externalLink: "https://example.com/project6",
+    externalLink: "-",
     image: "/images/project3.png",
     badges: [
       { text: "Design", color: "blue" },

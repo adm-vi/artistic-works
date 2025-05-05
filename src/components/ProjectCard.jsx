@@ -22,6 +22,8 @@ const getBadgeStyles = (color) => {
 };
 
 const ProjectCard = ({ title, description, content, externalLink, image, imageClass, badges = [] }) => {
+  const hasValidLink = externalLink && externalLink !== "-";
+
   return (
     <div className="h-auto md:h-auto max-h-[280px] rounded-lg border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/30 backdrop-blur-md overflow-hidden relative flex flex-col">
       <div className="absolute top-2 md:top-8 right-1 md:right-3 drop-shadow-md">
@@ -42,28 +44,34 @@ const ProjectCard = ({ title, description, content, externalLink, image, imageCl
       </div>
       
       <div className="border-t border-white/20 flex items-center justify-between gap-1 md:gap-0 p-2 md:p-3 pt-1 py-1 mt-auto">
-        <a 
-          href={externalLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-xs md:text-sm font-medium text-blue-600 hover:text-blue-800"
-        >
-          View
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="h-3 w-3 md:h-4 md:w-4 ml-0.5 md:ml-1" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
+        {hasValidLink ? (
+          <a 
+            href={externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-xs md:text-sm font-medium text-blue-600 hover:text-blue-800"
           >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
-            />
-          </svg>
-        </a>
+            View
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-3 w-3 md:h-4 md:w-4 ml-0.5 md:ml-1" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+              />
+            </svg>
+          </a>
+        ) : (
+          <span style={{fontFamily: "'Permanent Marker', cursive"}} className="text-slate-800 text-sm md:text-base -rotate-2">
+            coming soon
+          </span>
+        )}
         <div className="flex flex-wrap gap-0.5 md:gap-1">
           {badges.map((badge, index) => (
             <span 
