@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource/jersey-10": "^5.2.5",
+    "@fontsource/jersey-25": "^5.2.5",
+    "@fontsource/nanum-gothic-coding": "^5.2.5",
     "clsx": "^2.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

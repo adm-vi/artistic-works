@@ -33,7 +33,7 @@ const ProjectCard = ({ title, description, content, externalLink, image, imageCl
       </div>
       
       <div className="flex-shrink-0 pb-0 pr-12 md:pr-24 flex flex-col space-y-0 md:space-y-1 p-3 md:p-4">
-        <h3 className="text-lg md:text-xl font-normal leading-tight tracking-wide drop-shadow-sm font-jersey text-slate-900 mb-0">{title}</h3>
+        <h3 style={{fontFamily: "'Jersey 25', sans-serif"}} className="text-lg md:text-xl font-normal leading-tight tracking-wide drop-shadow-sm text-slate-900 mb-0">{title}</h3>
         <p className="text-xs md:text-sm text-slate-600">{description}</p>
       </div>
       

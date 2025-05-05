@@ -8,7 +8,8 @@ export default {
   theme: {
   	extend: {
       fontFamily: {
-        jersey: ['Jersey 10', 'display'],
+        jersey: ['Jersey 25', 'display'],
+        coding: ['Nanum Gothic Coding', 'monospace'],
       },
   		borderRadius: {
   			lg: 'var(--radius)',

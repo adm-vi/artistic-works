@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
       {/* Footer */}
       <footer className="w-full py-4 text-center text-muted-foreground rounded-md mt-4">
         <p>
-          Built with Vite, React, and Tailwind CSS
+          Artistic Works, LLC. &copy; 2025
         </p>
       </footer>
     </div>

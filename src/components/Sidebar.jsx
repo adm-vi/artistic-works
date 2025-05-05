@@ -1,38 +1,43 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import artisticLogo from '../assets/artistic_logo.png'
 
 const Sidebar = () => {
-  const [isHovering, setIsHovering] = useState(false)
-  const logoRef = useRef(null)
+  const [isHovered, setIsHovered] = useState(false)
+
+  const transform = isHovered
+    ? 'perspective(1000px) rotateX(20deg) rotateY(-10deg) translateY(-20px)'
+    : 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)'
 
   return (
-    <div className="w-full rounded-md p-6">
+    <div className="w-full rounded-md p-6 font-coding">
       <div className="flex flex-col h-full">
-        <div className="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-0">
-          <div 
-            className="inline-block perspective-[800px]"
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
-          >
-            <img 
-              ref={logoRef}
-              src={artisticLogo} 
-              alt="Artistic Logo" 
-              className="w-20 md:w-44 h-auto mb-2 transition-all duration-300 cursor-pointer filter drop-shadow-none hover:drop-shadow-lg"
-              style={{
-                transform: isHovering ? 
-                  'rotateY(180deg) scale(1.1) translateY(-3px)' : 
-                  'rotateY(0deg)'
-              }}
-            />
+        <div className="relative w-full mb-8">
+          <div>
+            <div 
+              className="inline-block"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <img 
+                src={artisticLogo} 
+                alt="Artistic Works Logo" 
+                className="w-56 h-auto transition-all duration-500 cursor-pointer filter drop-shadow-none hover:drop-shadow-lg"
+                style={{ transform }}
+              />
+            </div>
           </div>
-          
-          <div className="md:space-y-4">
-            <h2 className="text-xl md:text-3xl font-bold text-slate-800">Venture Incubator</h2>
-            <p className="text-sm md:text-lg text-slate-600 font-light hidden md:block">Transforming ideas into beautiful experiences</p>
-          </div>
+          <img 
+            src="/artistic_a.png" 
+            alt="Artistic A Logo" 
+            className="absolute top-10 right-0 md:right-20 w-20 h-auto"
+          />
         </div>
-        
+
+        <div className="md:space-y-4">
+          <h2 className="text-xl md:text-3xl font-bold text-slate-800 font-coding">Venture Studio</h2>
+          <p className="text-sm md:text-lg text-slate-600 font-light hidden md:block">Transforming ideas into beautiful experiences</p>
+        </div>
+
         {/* Divider visible only on md+ screens */}
         <div className="h-0.5 w-16 bg-slate-300 my-6 hidden md:block"></div>
         
@@ -41,7 +46,7 @@ const Sidebar = () => {
           Our passion for design excellence sets us apart.
         </p>
         
-        <button className="mt-4 px-4 md:px-6 py-2 bg-slate-800 text-white rounded-md hover:bg-slate-700 transition-colors text-sm md:text-base w-full md:w-auto mx-auto md:mx-0">
+        <button className="mt-4 px-4 md:px-6 py-2 bg-slate-800 text-white rounded-md hover:bg-slate-700 transition-colors text-sm md:text-base w-full md:w-auto mx-auto md:mx-0 font-coding">
           Get Started
         </button>
         
