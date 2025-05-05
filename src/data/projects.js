@@ -16,7 +16,7 @@ export const projects = [
     id: "escarole",
     title: "escarole.xyz", 
     description: "a healthier way to scroll", 
-    content: "A browser extension that helps you scroll social media with intention and mindfulness, reducing mindless doom-scrolling behaviors.",
+    content: "Learn about everything you are interested in & more; follow topics & ideas, not grifters & trolls.",
     externalLink: "https://example.com/project2",
     image: "/images/Escarole.png",
     badges: [
@@ -37,9 +37,9 @@ export const projects = [
     ]
   },
   { 
-    id: "project-4",
-    title: "Project 4", 
-    description: "A sample project", 
+    id: "launch",
+    title: "Out to Launch", 
+    description: "User & market research to inspire solopreneurs", 
     content: "Project 4 description with additional information about the implementation, technologies used, and the problem it solves for users.",
     externalLink: "https://example.com/project4",
     image: "/images/project3.png",
@@ -52,7 +52,7 @@ export const projects = [
     id: "project-5",
     title: "Project 5", 
     description: "A sample project", 
-    content: "Project 5 description that goes into detail about this innovative solution and how it addresses specific user needs in an elegant way.",
+    content: "on-demand vibe coding zoom support",
     externalLink: "https://example.com/project5",
     image: "/images/project3.png",
     badges: [
