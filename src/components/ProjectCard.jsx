@@ -26,24 +26,24 @@ const ProjectCard = ({ title, description, content, externalLink, image, imageCl
 
   return (
     <div className="h-auto md:h-auto max-h-[280px] rounded-lg border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/30 backdrop-blur-md overflow-hidden relative flex flex-col">
-      <div className="absolute top-2 md:top-8 right-1 md:right-3 drop-shadow-md">
+      <div className="absolute top-4 md:top-8 right-2 md:right-3 drop-shadow-md">
         <img 
           src={image || "/artistic_a.png"} 
           alt={`${title} logo`} 
-          className={`h-10 md:h-20 w-auto object-contain opacity-80 md:opacity-100 ${imageClass || ''}`}
+          className={`h-14 md:h-20 w-auto object-contain opacity-80 md:opacity-100 ${imageClass || ''}`}
         />
       </div>
       
-      <div className="flex-shrink-0 pb-0 pr-12 md:pr-24 flex flex-col space-y-0 md:space-y-1 p-3 md:p-4">
-        <h3 style={{fontFamily: "'Jersey 25', sans-serif"}} className="text-lg md:text-xl font-normal leading-tight tracking-wide drop-shadow-sm text-slate-900 mb-0">{title}</h3>
+      <div className="flex-shrink-0 pb-2 pr-16 md:pr-24 flex flex-col space-y-2 md:space-y-1 p-4 md:p-4">
+        <h3 style={{fontFamily: "'Jersey 25', sans-serif"}} className="text-lg md:text-xl font-normal leading-tight tracking-wide drop-shadow-sm text-slate-900 mb-1">{title}</h3>
         <p className="text-xs md:text-sm text-slate-600">{description}</p>
       </div>
       
-      <div className="p-3 md:p-4 pt-0 pr-12 md:pr-24 mt-0 pb-1">
+      <div className="p-4 md:p-4 pt-0 pr-16 md:pr-24 mt-0 pb-2">
         <p className="text-xs md:text-sm text-slate-800 line-clamp-3">{content}</p>
       </div>
       
-      <div className="border-t border-white/20 flex items-center justify-between gap-1 md:gap-0 p-2 md:p-3 pt-1 py-1 mt-auto">
+      <div className="border-t border-white/20 flex items-center justify-between gap-2 md:gap-0 p-3 md:p-3 pt-2 py-2 mt-auto">
         {hasValidLink ? (
           <a 
             href={externalLink}
