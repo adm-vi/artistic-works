@@ -38,7 +38,7 @@ export const projects = [
   },
   { 
     id: "launchpad",
-    title: "Launchpad AI", 
+    title: "launchpad", 
     description: "AI-powered product accelerator for solopreneurs", 
     content: "-",
     externalLink: "https://launchpad-ai.streamlit.app/",
