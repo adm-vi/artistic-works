@@ -5,12 +5,12 @@ const Sidebar = () => {
   const [isHovered, setIsHovered] = useState(false)
 
   const mainLogoTransform = isHovered
-    ? 'perspective(1000px) rotateY(-75deg) translateZ(20px)'
-    : 'perspective(1000px) rotateY(0deg) translateZ(0)'
+    ? 'translate3d(-50px, 60px, 0) scale(0.4)'
+    : 'translate3d(0, 0, 0) scale(1)'
 
   const smallLogoTransform = isHovered
-    ? 'perspective(1000px) translate3d(100px, 0, -40px) scale(1.6)'
-    : 'perspective(1000px) translate3d(0, 0, -40px) scale(1)'
+    ? 'translate3d(60px, -30px, 0) scale(1.8)'
+    : 'translate3d(0, 0, 0) scale(1)'
 
   return (
     <div className="w-full rounded-md p-6 font-coding">
@@ -24,22 +24,19 @@ const Sidebar = () => {
               onMouseLeave={() => setIsHovered(false)}
               style={{ transformStyle: 'preserve-3d' }}
             >
-              {/* Small logo positioned in same spot */}
+              {/* Small logo positioned behind */}
               <img 
                 src="/artistic_a.png" 
                 alt="Artistic A Logo" 
                 className="absolute inset-0 m-auto w-20 h-auto transition-all duration-700 ease-out"
                 style={{ transform: smallLogoTransform }}
               />
-              {/* Main logo with door swing effect */}
+              {/* Main logo with hover effect */}
               <img 
                 src={artisticLogo} 
                 alt="Artistic Works Logo" 
-                className="w-full h-auto transition-all duration-700 ease-in-out cursor-pointer"
-                style={{ 
-                  transform: mainLogoTransform,
-                  transformOrigin: 'left center'
-                }}
+                className="relative w-full h-auto transition-all duration-700 ease-in-out cursor-pointer"
+                style={{ transform: mainLogoTransform }}
               />
             </div>
           </div>
