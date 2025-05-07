@@ -9,19 +9,7 @@ import {
 } from '@/components/ui/card'
 import { cn } from "@/lib/utils"
 
-const getBadgeStyles = (color) => {
-  const styles = {
-    blue: "bg-blue-200/90 border-blue-300/50 text-blue-800",
-    green: "bg-green-200/90 border-green-300/50 text-green-800",
-    red: "bg-red-200/90 border-red-300/50 text-red-800",
-    purple: "bg-purple-200/90 border-purple-300/50 text-purple-800",
-    yellow: "bg-yellow-200/90 border-yellow-300/50 text-yellow-800"
-  };
-  
-  return styles[color] || "bg-gray-200/90 border-gray-300/50 text-gray-800";
-};
-
-const ProjectCard = ({ title, description, content, externalLink, image, imageClass, badges = [] }) => {
+const ProjectCard = ({ title, description, content, externalLink, image, imageClass }) => {
   const hasValidLink = externalLink && externalLink !== "-";
 
   return (
@@ -43,7 +31,7 @@ const ProjectCard = ({ title, description, content, externalLink, image, imageCl
         <p className="text-xs md:text-sm text-slate-800 line-clamp-3">{content}</p>
       </div>
       
-      <div className="border-t border-white/20 flex items-center justify-between gap-2 md:gap-0 p-3 md:p-3 pt-2 py-2 mt-auto">
+      <div className="border-t border-white/20 flex items-center p-3 md:p-3 pt-2 py-2 mt-auto">
         {hasValidLink ? (
           <a 
             href={externalLink}
@@ -72,16 +60,6 @@ const ProjectCard = ({ title, description, content, externalLink, image, imageCl
             coming soon
           </span>
         )}
-        <div className="flex flex-wrap gap-0.5 md:gap-1">
-          {badges.map((badge, index) => (
-            <span 
-              key={index} 
-              className={`inline-flex items-center rounded-full backdrop-blur-sm shadow-sm px-1 md:px-2 py-0.5 text-[8px] md:text-xs font-medium border ${getBadgeStyles(badge.color)}`}
-            >
-              {badge.text}
-            </span>
-          ))}
-        </div>
       </div>
     </div>
   )

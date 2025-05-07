@@ -17,7 +17,6 @@ function App() {
             externalLink={project.externalLink}
             image={project.image}
             imageClass={project.imageClass}
-            badges={project.badges}
           />
         ))}
       </div>
@@ -33,7 +32,6 @@ function App() {
             externalLink={project.externalLink}
             image={project.image}
             imageClass={project.imageClass}
-            badges={project.badges}
           />
         ))}
       </div>
