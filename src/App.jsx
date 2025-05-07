@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from './components/Layout'
 import ProjectCard from './components/ProjectCard'
 import { projects } from './data/projects'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           />
         ))}
       </div>
+      <Analytics />
     </Layout>
   )
 }
