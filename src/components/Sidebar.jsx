@@ -14,8 +14,8 @@ const Sidebar = () => {
 
   return (
     <div className="w-full rounded-md p-6 font-coding">
-      <div className="flex flex-col h-full items-center md:items-start">
-        <div className="relative w-full mb-8 flex flex-col items-center md:items-start">
+      <div className="flex flex-col h-full items-center">
+        <div className="relative w-full mb-8 flex flex-col items-center">
           <div className="relative">
             {/* Container for both logos */}
             <div 
@@ -42,9 +42,13 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="w-full md:space-y-4 text-center md:text-left">
-          <h2 className="text-xl md:text-3xl font-bold text-slate-800 font-coding">Venture Studio</h2>
-          {/* <p className="text-sm md:text-lg text-slate-600 font-light hidden md:block">Transforming ideas into beautiful experiences</p> */}
+        <div className="w-full md:space-y-4 text-center">
+          <h2 className="text-xl md:text-3xl font-bold text-slate-800 font-marker">VENTURE STUDIO</h2>
+          <p className="text-sm md:text-md text-slate-600 font-geist hidden md:block max-w-md mx-auto">
+            We're building a portfolio of consumer products & services primarily focused on supporting bootstrapped entrepreneurs.
+            <br /><br />
+            Expanding into physical goods, manufacturing, CPG, and retail—anchored in The Bronx, NYC.
+          </p>
         </div>
 
         {/* Divider visible only on md+ screens */}

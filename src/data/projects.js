@@ -3,7 +3,7 @@ export const projects = [
     id: "pioneer",
     title: "hello pioneer", 
     description: "community-led growth for solopreneurs", 
-    content: "Pioneer connects you with the right people in the right moments to help you refine your product, build your community, and launch successfully.",
+    content: "connect with the right people to help you build your community & launch successfully",
     externalLink: "https://www.hello-pioneer.com/",
     image: "/images/Pioneer.png",
     imageClass: "max-w-[50px] md:max-w-[60px]"
@@ -12,7 +12,7 @@ export const projects = [
     id: "escarole",
     title: "escarole.xyz", 
     description: "a healthier way to scroll", 
-    content: "Learn about everything you are interested in & more; follow topics & ideas, not grifters & trolls.",
+    content: "learn about everything you are interested in & more - follow topics & ideas, not grifters & trolls",
     externalLink: "https://www.escarole.xyz/",
     image: "/images/Escarole.png"
   },
@@ -41,10 +41,10 @@ export const projects = [
     image: "/images/Lunch.png"
   },
   { 
-    id: "project-6",
-    title: "Project 6", 
-    description: "-", 
-    content: "-",
+    id: "nexdoor",
+    title: "nexdoor", 
+    description: "community-based real estate fund", 
+    content: "attract retail & services that you and your neighbors want",
     externalLink: "-",
     image: "/images/project3.png"
   }
