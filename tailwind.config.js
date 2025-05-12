@@ -8,8 +8,13 @@ export default {
   theme: {
   	extend: {
       fontFamily: {
-        jersey: ['Jersey 25', 'display'],
         coding: ['Nanum Gothic Coding', 'monospace'],
+		reenie: ['Reenie Beanie', 'cursive'],
+		rock: ['Rock Salt', 'cursive'],
+		londrina: ['Londrina Solid', 'display'],
+		nanum: ['Nanum Pen Script', 'display'],
+		marker: ['Permanent Marker', 'display'],
+		geist: ['Geist Mono', 'monospace']
       },
   		borderRadius: {
   			lg: 'var(--radius)',
