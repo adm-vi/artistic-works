@@ -18,7 +18,7 @@ export const projects = [
   },
   { 
     id: "employeesOnly",
-    title: "employeesOnly.tech", 
+    title: "employeesOnly", 
     description: "merch & accesories for the modern employee", 
     content: "probably nsfw and definitely insulting to your manager",
     externalLink: "https://employeesonly.tech/",
