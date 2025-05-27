@@ -48,6 +48,10 @@ const Sidebar = () => {
             We're building a portfolio of consumer products & services primarily focused on supporting bootstrapped entrepreneurs.
             <br /><br />
             Expanding into physical goods, manufacturing, CPG, and retail—anchored in The Bronx, NYC.
+            <br /><br />
+            <a href="mailto:alex@artisticworks.xyz" className="text-slate-600 font-marker text-lg md:text-xl hover:text-slate-800 transition-colors">
+              alex@artisticworks.xyz
+            </a>
           </p>
         </div>
 

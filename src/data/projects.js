@@ -9,20 +9,20 @@ export const projects = [
     imageClass: "max-w-[50px] md:max-w-[60px]"
   },
   { 
-    id: "escarole",
-    title: "escarole.xyz", 
-    description: "a healthier way to scroll", 
-    content: "learn about everything you are interested in & more - follow topics & ideas, not grifters & trolls",
-    externalLink: "https://www.escarole.xyz/",
-    image: "/images/Escarole.png"
-  },
-  { 
     id: "employeesOnly",
     title: "employeesOnly", 
     description: "merch & accesories for the modern employee", 
     content: "probably nsfw and definitely insulting to your manager",
     externalLink: "https://employeesonly.tech/",
     image: "/images/EmployeesOnly.png"
+  },
+  { 
+    id: "launch",
+    title: "out to launch", 
+    description: "user & market research to inspire indie builders", 
+    content: "-",
+    externalLink: "https://outtolaunch.io/",
+    image: "/images/Lunch.png"
   },
   { 
     id: "launchpad",
@@ -33,12 +33,12 @@ export const projects = [
     image: "/images/Launchpad.png"
   },
   { 
-    id: "launch",
-    title: "out to launch", 
-    description: "user & market research to inspire indie builders", 
-    content: "-",
-    externalLink: "https://outtolaunch.io/",
-    image: "/images/Lunch.png"
+    id: "escarole",
+    title: "escarole.xyz", 
+    description: "a healthier way to scroll", 
+    content: "learn about everything you are interested in & more - follow topics & ideas, not grifters & trolls",
+    externalLink: "https://www.escarole.xyz/",
+    image: "/images/Escarole.png"
   },
   { 
     id: "nexdoor",
