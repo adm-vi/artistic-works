@@ -23,8 +23,8 @@ const ProjectCard = ({ title, description, content, externalLink, image, imageCl
       </div>
       
       <div className="flex-shrink-0 pb-2 pr-16 md:pr-24 flex flex-col space-y-2 md:space-y-1 p-4 md:p-4">
-        <h3 className="text-base md:text-lg font-normal leading-tight tracking-wide drop-shadow-sm text-slate-900 mb-1 font-rock truncate">{title}</h3>
-        <p className="text-lg md:text-lg text-slate-600 font-reenie line-clamp-1">{description}</p>
+        <h3 className="text-base md:text-lg font-normal leading-tight tracking-wide drop-shadow-sm text-slate-900 mb-1 font-marker truncate">{title}</h3>
+        <p className="text-xs md:text-xs text-slate-600 font-geist break-words">{description}</p>
       </div>
       
       <div className="flex-1 px-4 pr-16 md:pr-24 py-1">

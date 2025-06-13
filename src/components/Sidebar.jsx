@@ -43,15 +43,24 @@ const Sidebar = () => {
         </div>
 
         <div className="w-full md:space-y-4 text-center">
-          <h2 className="text-xl md:text-3xl font-bold text-slate-800 font-marker">VENTURE STUDIO</h2>
-          <p className="text-sm md:text-md text-slate-600 font-geist hidden md:block max-w-md mx-auto">
+          <h2 className="text-xl md:text-3xl font-bold text-slate-800 font-marker mb-4">VENTURE STUDIO</h2>
+          <p className="text-xs md:hidden text-slate-600 font-rock max-w-md mx-auto">
             We're building a portfolio of consumer products & services primarily focused on supporting bootstrapped entrepreneurs.
             <br /><br />
-            Expanding into physical goods, manufacturing, CPG, and retail—anchored in The Bronx, NYC.
+            Expanding into physical goods, manufacturing, CPG, and retail.
             <br /><br />
-            <a href="mailto:alex@artisticworks.xyz" className="text-slate-600 font-marker text-lg md:text-xl hover:text-slate-800 transition-colors">
-              alex@artisticworks.xyz
-            </a>
+            Anchored in Port Morris, The Bronx, NYC.
+            <br /><br />
+            <span className="text-slate-600 font-marker text-base">alex@artisticworks.xyz</span>
+          </p>
+          <p className="text-sm md:text-md text-slate-600 font-rock hidden md:block max-w-md mx-auto">
+            We're building a portfolio of consumer products & services primarily focused on supporting bootstrapped entrepreneurs.
+            <br /><br />
+            Expanding into physical goods, manufacturing, CPG, and retail.
+            <br /><br />
+            Anchored in Port Morris, The Bronx, NYC.
+            <br /><br />
+            <span className="text-slate-600 font-marker text-lg md:text-xl">alex@artisticworks.xyz</span>
           </p>
         </div>
 
