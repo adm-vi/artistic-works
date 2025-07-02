@@ -2,70 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {  
-  @font-face {
-    font-family: 'Nanum Gothic Coding';
-    src: url('/@fontsource/nanum-gothic-coding/files/nanum-gothic-coding-latin-400-normal.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Nanum Gothic Coding';
-    src: url('/@fontsource/nanum-gothic-coding/files/nanum-gothic-coding-latin-700-normal.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Reenie Beanie';
-    src: url('/@fontsource/reenie-beanie/files/reenie-beanie-latin-400-normal.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Rock Salt';
-    src: url('/@fontsource/rock-salt/files/rock-salt-latin-400-normal.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Londrina Solid';
-    src: url('/@fontsource/londrina-solid/files/londrina-solid-latin-400-normal.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Nanum Pen Script';
-    src: url('/@fontsource/nanum-pen-script/files/nanum-pen-script-latin-400-normal.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Permanent Marker';
-    src: url('/@fontsource/permanent-marker/files/permanent-marker-latin-400-normal.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Geist Mono';
-    src: url('/@fontsource-variable/geist-mono/files/geist-mono-latin-variable-full.woff2') format('woff2');
-    font-weight: 100 900;
-    font-style: normal;
-  }
-}
+@layer base {}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

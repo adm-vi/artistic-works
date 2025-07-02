@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, content, externalLink, image, imageCl
       </div>
       
       <div className="flex-1 px-4 pr-16 md:pr-24 py-1">
-        <p className="text-sm md:text-sm text-slate-800 line-clamp-3 font-geist">{content}</p>
+        <p className="text-sm md:text-sm text-slate-800 line-clamp-3 font-turncoat">{content}</p>
       </div>
       
       <div className="border-t border-white/20 flex items-center p-3 md:p-3 pt-2 py-2">

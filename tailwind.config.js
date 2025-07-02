@@ -9,12 +9,12 @@ export default {
   	extend: {
       fontFamily: {
         coding: ['Nanum Gothic Coding', 'monospace'],
-		reenie: ['Reenie Beanie', 'cursive'],
 		rock: ['Rock Salt', 'cursive'],
-		londrina: ['Londrina Solid', 'display'],
-		nanum: ['Nanum Pen Script', 'display'],
 		marker: ['Permanent Marker', 'display'],
-		geist: ['Geist Mono', 'monospace']
+		geist: ['Geist Mono', 'monospace'],
+		justme: ['Just Me Again Down Here', 'monospace'],
+		nerve: ['Mynerve', 'display'],
+		turncoat: ['Walter Turncoat', 'display']
       },
   		borderRadius: {
   			lg: 'var(--radius)',

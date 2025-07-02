@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       </div>
       
       {/* Footer */}
-      <footer className="w-full py-4 text-center text-muted-foreground rounded-md mt-4">
+      <footer className="w-full py-4 font-turncoat text-center text-muted-foreground rounded-md mt-4">
         <p>
           Artistic Works, LLC. &copy; 2025
         </p>

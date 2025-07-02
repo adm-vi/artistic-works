@@ -44,23 +44,14 @@ const Sidebar = () => {
 
         <div className="w-full md:space-y-4 text-center">
           <h2 className="text-xl md:text-3xl font-bold text-slate-800 font-marker mb-4">VENTURE STUDIO</h2>
-          <p className="text-xs md:hidden text-slate-600 font-rock max-w-md mx-auto">
+          <p className="text-md md:text-md text-slate-600 font-turncoat max-w-md mx-auto">
             We're building a portfolio of consumer products & services primarily focused on supporting bootstrapped entrepreneurs.
             <br /><br />
             Expanding into physical goods, manufacturing, CPG, and retail.
             <br /><br />
             Anchored in Port Morris, The Bronx, NYC.
             <br /><br />
-            <span className="text-slate-600 font-marker text-base">alex@artisticworks.xyz</span>
-          </p>
-          <p className="text-sm md:text-md text-slate-600 font-rock hidden md:block max-w-md mx-auto">
-            We're building a portfolio of consumer products & services primarily focused on supporting bootstrapped entrepreneurs.
-            <br /><br />
-            Expanding into physical goods, manufacturing, CPG, and retail.
-            <br /><br />
-            Anchored in Port Morris, The Bronx, NYC.
-            <br /><br />
-            <span className="text-slate-600 font-marker text-lg md:text-xl">alex@artisticworks.xyz</span>
+            <span className="text-slate-600 font-turncoat text-base md:text-lg lg:text-xl">alex@artisticworks.xyz</span>
           </p>
         </div>
 
