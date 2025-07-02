@@ -44,6 +44,7 @@ const Sidebar = () => {
 
         <div className="w-full md:space-y-4 text-center">
           <h2 className="text-xl md:text-3xl font-bold text-slate-800 font-marker mb-4">VENTURE STUDIO</h2>
+          <div className="h-0.5 w-16 bg-slate-300 mx-auto mb-4"></div>
           <p className="text-md md:text-md text-slate-600 font-turncoat max-w-md mx-auto">
             We're building a portfolio of consumer products & services primarily focused on supporting bootstrapped entrepreneurs.
             <br /><br />
@@ -51,6 +52,12 @@ const Sidebar = () => {
             <br /><br />
             Anchored in Port Morris, The Bronx, NYC.
             <br /><br />
+            <img 
+              src="/images/Thumbtack.png" 
+              alt="Thumbtack" 
+              className="inline-block w-8 h-8 mb-2"
+            />
+            <br />
             <span className="text-slate-600 font-turncoat text-base md:text-lg lg:text-xl">alex@artisticworks.xyz</span>
           </p>
         </div>
